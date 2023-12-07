@@ -291,7 +291,6 @@ body {
   align-items: flex-start;
   gap: 30px;
   margin-top: 112px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .fun__item {
@@ -454,6 +453,11 @@ body {
 .fun__top-4 {
   background-image: url(./img/product-cover-132\ sec-.png);
 }
+@media (max-width: 900px) {
+  .fun__body {
+    flex-wrap: wrap;
+  }
+}
 .teacher {
   display: flex;
   padding: 160px 0px;
@@ -474,7 +478,6 @@ body {
   align-items: center;
   gap: 30px;
   padding-top: 92px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .teacher__item {
@@ -507,6 +510,11 @@ body {
   line-height: 24px;
   letter-spacing: 0.2px;
 }
+@media (max-width: 900px) {
+  .teacher__body {
+    flex-wrap: wrap;
+  }
+}
 .big__team {
   padding: 112px 0px;
 }
@@ -518,12 +526,17 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .team__item {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
   overflow: hidden;
   width: 238px;
+  transition: all 0.3s ease 0s;
+}
+.team__item:hover {
+  transform: scale(1.2);
 }
 .team__info {
   display: flex;
@@ -602,7 +615,6 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  flex-wrap: wrap;
 }
 .info__infa {
   display: flex;
@@ -651,6 +663,11 @@ body {
   align-items: center;
   gap: 10px;
   align-self: center;
+}
+@media (max-width: 900px) {
+  .info__body {
+    flex-wrap: wrap;
+  }
 }
 .footer {
   padding: 25px 0px;
